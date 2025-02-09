@@ -29,7 +29,7 @@ header .logo {
 }
 
 header nav a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     margin: 0 15px;
     font-weight: 600;
@@ -76,7 +76,7 @@ article {
 article img.client-img {
     width: 150px;
     border-radius: 50%;
-    float: left;
+    float: right;
     margin-right: 20px;
 }
 
@@ -101,7 +101,7 @@ article p {
 /* Footer */
 footer {
     background-color: var(--footer-bg);
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 20px;
     text-align: center;
 }
