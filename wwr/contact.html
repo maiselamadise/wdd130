@@ -2,30 +2,96 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with whitewater Rafting. We're here to answer any questions you have about our services.">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Us - Rafting Company</title>
+    <title>Contact Us | Whitewater Rafting</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
     <header>
-        <img src="logo.jpg" alt="Rafting Company Logo" class="logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="container">
+            <h1>Whitewater Rafting</h1>
+                <img src="logo.jpg" alt="Rafting Company Logo" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="trips.html">Trips</a></li>
+                    </ul>
+                </nav>
+        </div>
     </header>
 
     <main>
-        <div class="hero">
+    
+        </section>
+        <section class="contact-info">
             <img src="Adventure.jpg" alt="Rafting Adventure" class="hero-img">
             <h1>Rafting Adventures</h1>
-        </div>
-        
+            <h2>Contact Information</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us. We’re here to help!</p>
+            <address>
+                <p><strong>Address:</strong> 123 Adventure Rd, River City, RA 45678</p>
+                <p><strong>Phone:</strong> (555) 123-4567</p>
+                <p><strong>Email:</strong> <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a></p>
+            </address>
+
+            <!-- Embedded Google Map -->
+            <h3>Find Us on the Map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" allowfullscreen></iframe>
+        </section>
+
+           <!-- Employee Profiles -->
+           <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="employee">
+                <img src="employee1.jpg" alt="John Doe">
+                <p>John Doe, Customer Service</p>
+            </div>
+            <div class="employee">
+                <img src="employee2.jpg" alt="Jane Smith">
+                <p>Jane Smith, Rafting Guide</p>
+            </div>
+            <div class="employee">
+                <img src="employee3.jpg" alt="Mike Johnson">
+                <p>Mike Johnson, Reservation Specialist</p>
+            </div>
+        </section>
+          <!-- Contact Form -->
+          <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit_contact.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of Your Message:</legend>
+                    <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                    <label for="general">General Inquiry</label><br>
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                    <label for="reservation">Reservation Question</label><br>
+                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </fieldset>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
         <article>
             <img src="Rafting.jpg" alt="Happy client" class="client-img">
             <p>We provide the best white water rafting experiences that bring adventure to life!</p>
@@ -49,7 +115,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Rafting Adventures. Created by [Maisela Manhla Madise]</p>
+        <p>&copy; 2025 Whitewater Rafting | Maisela Manhla Madise | <a href="contact-wireframe.png" target="_blank">View Wireframe</a></p>
         <a href="#"><img src="facebook.jpg" alt="Facebook"></a>
         <a href="#"><img src="twiter.jpg" alt="Twitter"></a>
         <a href="#"><img src="inster.jpg" alt="Instagram"></a>
