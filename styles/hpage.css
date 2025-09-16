@@ -1,37 +1,23 @@
-main {
-    max-width: 840px;  
-  }
-  h1 {
-      background-color: darkblue;
-      color: white;
-      padding: 16px;
-      text-align: center;
-  }
-  
-  aside {
-      width: 20rem;
-      margin: 1rem;
-      border: solid rgb(0 0 0 / 0.2); /* 1 */
-      padding: 1rem;
-      background-color: #eee;
-      color: #333;
-      text-align: center;
-  }
-  
-  aside img {
-      width: 200px;
-      height: auto;
-  }
-  
-  main img {
-      width: 150px;
-      height: auto;
-  }
-  
-  p { padding: 0;}
-  
-  footer {
-      margin-top: 15px;
-      border-top: 1px solid #000;
-      text-align: center;
-  }
+/* REQUIRED NAV RULE */
+nav {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* REQUIRED NAV A RULE */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+}
+
+/* REQUIRED IMG RULE */
+img {
+    width: 200px;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 4px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
