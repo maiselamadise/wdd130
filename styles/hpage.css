@@ -1,64 +1,65 @@
-/* nav styling */
-nav {
-    background-color: #333;
-    padding: 1rem;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    display: inline-block;
-}
-
-/* h1 styling */
-h1 {
-    color: #333;
-}
-
-/* img styling */
-img {
-    width: 200px;
-    height: auto;
-    border: 1px solid #ccc;
-    padding: 4px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* main styling */
-main {
-    max-width: 800px;
-    margin: auto;
-    padding: 1rem;
-}
-
-/* aside styling */
-aside {
-    width: 80%;
-    margin: 2rem auto;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-/* aside image styling */
-aside img {
-    width: 200px;
-    height: auto;
-}
-
-/* paragraph styling */
-p {
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 0;
-}
-
-/* footer styling */
-footer {
-    margin-top: 2rem;
-    border-top: 1px solid #ccc;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
     text-align: center;
-    padding: 1rem 0;
-    font-size: 0.9rem;
-}
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  /* Updated selector to only affect main profile image */
+  main img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 10px 0;
+  }
+  
+  /* Reset paragraph padding */
+  p {
+    padding: 0;
+  }
+  
+  /* Aside styles */
+  aside {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Specific image inside aside */
+  aside img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+  }
+  
+  /* Footer styling */
+  footer {
+    margin-top: 40px;
+    border-top: 2px solid #ccc;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f9f9f9;
+  }
+  
