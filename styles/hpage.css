@@ -1,11 +1,10 @@
-/* REQUIRED NAV RULE */
+/* nav styling */
 nav {
     background-color: #333;
     padding: 1rem;
     text-align: center;
 }
 
-/* REQUIRED NAV A RULE */
 nav a {
     color: white;
     text-decoration: none;
@@ -13,11 +12,53 @@ nav a {
     display: inline-block;
 }
 
-/* REQUIRED IMG RULE */
+/* h1 styling */
+h1 {
+    color: #333;
+}
+
+/* img styling */
 img {
     width: 200px;
     height: auto;
     border: 1px solid #ccc;
     padding: 4px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* main styling */
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+}
+
+/* aside styling */
+aside {
+    width: 80%;
+    margin: 2rem auto;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* aside image styling */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* paragraph styling */
+p {
+    padding: 0;
+}
+
+/* footer styling */
+footer {
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
 }
