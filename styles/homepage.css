@@ -6,9 +6,9 @@ nav {
 }
 
 nav a {
-    color: gray;
+    color: white;
     display: block;
-    /* optional: text-decoration: none; */
+    
 }
 
 main {
