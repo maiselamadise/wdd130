@@ -5,11 +5,17 @@ main {
 p { 
     padding: 0;
 }
+
+nav {
+    background-color: blue;
+    padding: 10px;
+}
+
 nav a {
     color: gray;
     padding: 10px;
     display: block;
-    background-color: blue;
+   
 }
 
 h1 {
