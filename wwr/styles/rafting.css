@@ -17,6 +17,7 @@ body {
     font-family: var(--body-font);
     color: var(--accent1-color);
     background-color: #fff;
+    line-height: 1.6;
 }
 
 header {
@@ -27,16 +28,26 @@ header {
 header nav a {
     color: var(--accent2-color);
     text-decoration: none;
-    margin-left: 0px;
-    font-weight: bold;
 }
 
-header nav a:hover {
+header nav a + a {
+    margin-left: 16px;
+}
+
+header nav a:hover,
+header nav a:focus {
     text-decoration: underline;
+    outline: none;
+}
+
+a:focus {
+    outline: 2px solid var(--accent2-color);
+    outline-offset: 2px;
 }
 
 header, main, footer {
-    width: 840px;
+    max-width: 840px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -44,7 +55,6 @@ h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     text-align: center;
-    
 }
 
 nav, p, section, article {
@@ -61,6 +71,11 @@ nav, p, section, article {
     height: 32px;
     margin: 0 8px;
     vertical-align: middle;
+    transition: transform 0.2s ease-in-out;
+}
+
+.socialmedia a:hover img {
+    transform: scale(1.1);
 }
 
 /* HERO section styling */
@@ -101,4 +116,11 @@ nav, p, section, article {
     margin-left: 16px;
     margin-bottom: 8px;
     border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 16px;
+    color: var(--accent2-color);
 }
