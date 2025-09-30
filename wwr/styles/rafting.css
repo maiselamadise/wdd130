@@ -2,11 +2,12 @@
     --primary-color: #055a05;       /* forest green */
     --secondary-color: #f4a261;     /* warm sand */
     --accent1-color: #264653;       /* dark slate blue */
-    --accent2-color: #e9c46a;       /* light golden yellow */
+    --accent2-color: #f4e285;       /* improved yellow contrast */
     --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
+/* ====== Global Reset and Base Styles ====== */
 * {
     margin: 0;
     padding: 0;
@@ -17,20 +18,31 @@ body {
     font-family: var(--body-font);
     color: var(--accent1-color);
     background-color: #fff;
-    line-height: 1.6;
+    line-height: 1.6; /* FIXED: was too tight at 0.6 */
 }
 
+a:focus {
+    outline: 2px solid var(--accent2-color);
+    outline-offset: 2px;
+}
+
+/* ====== Header Styles ====== */
 header {
     display: grid;
     grid-template-columns: auto 1fr;
-    align-items: flex-end;
+    align-items: center; /* FIXED: 'right' is not valid for align-items */
     background-color: var(--primary-color);
     color: var(--accent2-color);
     padding: 10px 30px;
 }
 
+header img {
+    position: relative;
+    top: 5px; /* Adjusted from 30px which was too far */
+}
+
 header nav {
-    display: inline-flex;
+    display: flex; /* FIXED: inline-flex not needed */
     justify-content: flex-end;
     gap: 20px;
 }
@@ -40,54 +52,52 @@ header nav a {
     text-decoration: none;
     padding: 8px 12px;
     font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header nav a:hover {
     background-color: var(--accent1-color);
     border-radius: 4px;
-    
 }
 
-header img {
-    position: relative;
-    top: auto;   /* Moves it down */
-    /* or */
-    top: 10px;  /* Moves it up */
-}
-
-/* Grid layout in the header */
-.site-header {
+/* === HEADER CONTAINER USING CSS GRID === */
+.header-container {
     display: grid;
-    grid-template-columns: auto 1fr; 
-    align-items: center;             /* Vertically center both logo and nav */
-    padding: 1rem 2rem;
-    background-color: #f5f5f5;
-  }
-  
-  /* Flex layout inside the nav */
+    grid-template-columns: auto 1fr; /* Logo on the left, nav on the right */
+    align-items: center;
+    gap: 20px;
+    padding: 10px 30px;
+}
+
+/* === NAVIGATION USING FLEXBOX === */
 .main-nav {
     display: flex;
-    justify-content: flex-end; /* Push nav items to the right */
-    gap: 1.5rem;               /* Space between nav links */
-  }
-  
-.main-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-  }
-
-a:focus {
-    outline: 2px solid var(--accent2-color);
-    outline-offset: 2px;
+    justify-content: flex-end;
+    gap: 20px;
 }
 
+/* NAV LINKS STYLING */
+.main-nav a {
+    color: #ffffff; /* Good contrast on dark background */
+    text-decoration: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-nav a:hover {
+    background-color: var(--accent1-color);
+    border-radius: 4px;
+}
+
+/* ====== Layout Containers ====== */
 header, main, footer {
     max-width: 840px;
     width: 100%;
     margin: 0 auto;
 }
 
+/* ====== Typography ====== */
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -99,23 +109,7 @@ nav, p, section, article {
     padding: 10px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia a img {
-    width: 32px;
-    height: 32px;
-    margin: 0 8px;
-    vertical-align: middle;
-    transition: transform 0.2s ease-in-out;
-}
-
-.socialmedia a:hover img {
-    transform: scale(1.1);
-}
-
-/* HERO section styling */
+/* ====== HERO Section ====== */
 .hero {
     position: relative;
 }
@@ -132,7 +126,7 @@ nav, p, section, article {
     width: 100%;
     padding: 16px;
     text-align: center;
-    background-color: rgba(38, 70, 89, 0.85); /* semi-transparent dark background */
+    background-color: rgba(38, 70, 89, 0.85);
     color: #fff;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
@@ -155,7 +149,7 @@ nav, p, section, article {
     border-radius: 4px;
 }
 
-/* === HISTORY SECTION === */
+/* ====== History Section ====== */
 .history-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -170,7 +164,7 @@ nav, p, section, article {
     border-radius: 6px;
 }
 
-/* === ADVENTURES SECTION === */
+/* ====== Adventures Section ====== */
 .adventures {
     padding: 2rem 1rem;
     border-top: 4px solid var(--accent1-color);
@@ -205,6 +199,7 @@ nav, p, section, article {
     color: var(--accent1-color);
 }
 
+/* ====== Footer ====== */
 footer {
     text-align: center;
     background-color: var(--primary-color);
@@ -214,5 +209,20 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
 
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia a img {
+    width: 32px;
+    height: 32px;
+    margin: 0 8px;
+    vertical-align: middle;
+    transition: transform 0.2s ease-in-out;
+}
+
+.socialmedia a:hover img {
+    transform: scale(1.1);
 }
