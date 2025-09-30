@@ -18,7 +18,7 @@ body {
     font-family: var(--body-font);
     color: var(--accent1-color);
     background-color: #fff;
-    line-height: 1.6; /* FIXED: was too tight at 0.6 */
+    line-height: 1.6; 
 }
 
 a:focus {
@@ -30,7 +30,7 @@ a:focus {
 header {
     display: grid;
     grid-template-columns: auto 1fr;
-    align-items: center; /* FIXED: 'right' is not valid for align-items */
+    align-items: center; 
     background-color: var(--primary-color);
     color: var(--accent2-color);
     padding: 10px 30px;
@@ -38,11 +38,11 @@ header {
 
 header img {
     position: relative;
-    top: 5px; /* Adjusted from 30px which was too far */
+    top: 5px; 
 }
 
 header nav {
-    display: flex; /* FIXED: inline-flex not needed */
+    display: flex; 
     justify-content: flex-end;
     gap: 20px;
 }
@@ -63,7 +63,7 @@ header nav a:hover {
 /* === HEADER CONTAINER USING CSS GRID === */
 .header-container {
     display: grid;
-    grid-template-columns: auto 1fr; /* Logo on the left, nav on the right */
+    grid-template-columns: auto 1fr; 
     align-items: center;
     gap: 20px;
     padding: 10px 30px;
@@ -78,7 +78,7 @@ header nav a:hover {
 
 /* NAV LINKS STYLING */
 .main-nav a {
-    color: #ffffff; /* Good contrast on dark background */
+    color: #ffffff; 
     text-decoration: none;
     padding: 8px 12px;
     font-weight: bold;
