@@ -1,228 +1,313 @@
 :root {
-    --primary-color: #055a05;       /* forest green */
-    --secondary-color: #f4a261;     /* warm sand */
-    --accent1-color: #264653;       /* dark slate blue */
-    --accent2-color: #f4e285;       /* improved yellow contrast */
-    --heading-font: "Times New Roman", Georgia, serif;
-    --body-font: Arial, Helvetica, sans-serif;
+  --primary-color: #055a05;       /* forest green */
+  --secondary-color: #f4a261;     /* warm sand */
+  --accent1-color: #264653;       /* dark slate blue */
+  --accent2-color: #f4e285;       /* improved yellow contrast */
+  --heading-font: "Times New Roman", Georgia, serif;
+  --body-font: Arial, Helvetica, sans-serif;
 }
 
 /* ====== Global Reset and Base Styles ====== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-    background-color: #fff;
-    line-height: 1.6; 
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: #fff;
+  line-height: 1.6; 
 }
 
 a:focus {
-    outline: 2px solid var(--accent2-color);
-    outline-offset: 2px;
+  outline: 2px solid var(--accent2-color);
+  outline-offset: 2px;
 }
 
 /* ====== Header Styles ====== */
 header {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center; 
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-    padding: 10px 30px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center; 
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 10px 30px;
 }
 
 header img {
-    position: relative;
-    top: 5px; 
+  position: relative;
+  top: 5px; 
 }
 
 header nav {
-    display: flex; 
-    justify-content: flex-end;
-    gap: 20px;
+  display: flex; 
+  justify-content: flex-end;
+  gap: 20px;
 }
 
 header nav a {
-    color: var(--accent2-color);
-    text-decoration: none;
-    padding: 8px 12px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  color: var(--accent2-color);
+  text-decoration: none;
+  padding: 8px 12px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header nav a:hover {
-    background-color: var(--accent1-color);
-    border-radius: 4px;
+  background-color: var(--accent1-color);
+  border-radius: 4px;
 }
 
 /* === HEADER CONTAINER USING CSS GRID === */
 .header-container {
-    display: grid;
-    grid-template-columns: auto 1fr; 
-    align-items: center;
-    gap: 20px;
-    padding: 10px 30px;
+  display: grid;
+  grid-template-columns: auto 1fr; 
+  align-items: center;
+  gap: 20px;
+  padding: 10px 30px;
 }
 
 /* === NAVIGATION USING FLEXBOX === */
 .main-nav {
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
 }
 
 /* NAV LINKS STYLING */
 .main-nav a {
-    color: #ffffff; 
-    text-decoration: none;
-    padding: 8px 12px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  color: #ffffff; 
+  text-decoration: none;
+  padding: 8px 12px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .main-nav a:hover {
-    background-color: var(--accent1-color);
-    border-radius: 4px;
+  background-color: var(--accent1-color);
+  border-radius: 4px;
 }
 
 /* ====== Layout Containers ====== */
 header, main, footer {
-    max-width: 840px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 840px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* ====== Typography ====== */
 h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    text-align: center;
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  text-align: center;
 }
 
 nav, p, section, article {
-    margin: 16px;
-    padding: 10px;
+  margin: 16px;
+  padding: 10px;
 }
 
 /* ====== HERO Section ====== */
 .hero {
-    position: relative;
+  position: relative;
 }
 
 .hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    background-color: rgba(38, 70, 89, 0.85);
-    color: #fff;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  background-color: rgba(38, 70, 89, 0.85);
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 16px;
-    border-radius: 8px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 16px;
+  border-radius: 8px;
 }
 
 .hero article img {
-    float: right;
-    width: 125px;
-    margin-left: 16px;
-    margin-bottom: 8px;
-    border-radius: 4px;
+  float: right;
+  width: 125px;
+  margin-left: 16px;
+  margin-bottom: 8px;
+  border-radius: 4px;
 }
 
 /* ====== History Section ====== */
 .history-content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 1rem;
-    align-items: flex-start;
-    margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-top: 1rem;
 }
 
 .history-content img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 6px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 6px;
 }
 
 /* ====== Adventures Section ====== */
 .adventures {
-    padding: 2rem 1rem;
-    border-top: 4px solid var(--accent1-color);
+  padding: 2rem 1rem;
+  border-top: 4px solid var(--accent1-color);
 }
 
 .adventure-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .adventure-gallery figure {
-    flex: 1 1 calc(20% - 1rem);
-    text-align: center;
-    background-color: #fff;
-    border-radius: 6px;
-    padding: 0.5rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(20% - 1rem);
+  text-align: center;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .adventure-gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
 
 .adventure-gallery figcaption {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: var(--accent1-color);
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--accent1-color);
 }
 
 /* ====== Footer ====== */
 footer {
-    text-align: center;
-    background-color: var(--primary-color);
-    padding: 16px;
-    color: var(--accent2-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+  text-align: center;
+  background-color: var(--primary-color);
+  padding: 16px;
+  color: var(--accent2-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .socialmedia a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .socialmedia a img {
-    width: 32px;
-    height: 32px;
-    margin: 0 8px;
-    vertical-align: middle;
-    transition: transform 0.2s ease-in-out;
+  width: 32px;
+  height: 32px;
+  margin: 0 8px;
+  vertical-align: middle;
+  transition: transform 0.2s ease-in-out;
 }
 
 .socialmedia a:hover img {
-    transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* ====== Form ====== */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+} 
+
+
+header {
+margin: 0 auto;
+width: 800px;
+}
+
+h1 {
+margin: 1rem;
+font-size: 1.5em;
+color: navy;
+text-align: center;
+}
+
+form {
+width: 650px;
+margin: 0 auto;
+padding: 1rem;
+border: 1px solid rgb(0 0 0 / 0.1);
+border-radius: 0.5rem;
+background-color: #eee;
+display: grid;
+}
+
+fieldset {
+display: grid;
+grid-gap: .5rem;
+margin: 1rem;
+border: 1px solid rgb(0 0 0 / 0.2);
+padding: 1rem;
+}
+
+legend {
+padding: 0.5rem;
+color: navy;
+font-size: 1.3em;
+}
+
+label, input, button, select, textarea {
+font-family: Roboto, Arial, sans-serif;
+}
+
+label {
+text-align: left;
+padding-right: 1rem;
+}
+
+input, select, textarea {
+padding: 0.5rem;
+font-size: 1.1rem;
+}
+
+input [type="checkbox"] {
+width: 22px;
+height: 22px;
+vertical-align: bottom;
+}
+
+button {
+margin: 1rem;
+background-color: var(--primary-color);
+color: var(--accent2-color);
+border: none;
+border-radius: .5rem;
+padding: .75rem;
+font-size: 1.2rem;
+}
+
+button:hover {
+background-color: darkgreen;
+}
+
+.employees {
+display: flex;
+justify-content: space-between;
+gap: 1rem;
 }
