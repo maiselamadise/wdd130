@@ -25,6 +25,8 @@
     </header>
 
     <main>
+        <h1>Contact White Water Rafting Co.</h1>
+
         <!-- Contact Info Section -->
         <section class="contact-info">
             <h2>Contact Information</h2>
@@ -34,10 +36,10 @@
 
             <div class="map">
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093744!2d144.95373631532058!3d-37.81720997975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f1f1f1%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1614313697892!5m2!1sen!2sus" 
+                    src="https://www.google.com/maps/embed?pb=..." 
                     width="600" 
                     height="450" 
-                    allowfullscreen="" 
+                    allowfullscreen 
                     loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
@@ -56,15 +58,21 @@
 
                 <fieldset>
                     <legend>Purpose of Message:</legend>
-                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
-                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
-                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                    <input type="radio" id="general" name="purpose" value="general" required>
+                    <label for="general">General Inquiry</label><br>
+
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label><br>
+
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
                 </fieldset>
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
-                <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
 
                 <button type="submit">Send Message</button>
             </form>
@@ -75,15 +83,15 @@
             <h2>Meet Our Team</h2>
             <div class="employees">
                 <figure>
-                    <img src="images/employee1.png" alt="Maisela - Lead Guide" width="200">
+                    <img src="images/employee1.png" alt="Maisela – Lead Guide" width="200">
                     <figcaption>Maisela – Lead Guide</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employee2.png" alt="Audrey - Reservations Manager" width="200">
+                    <img src="images/employee2.png" alt="Audrey – Reservations Manager" width="200">
                     <figcaption>Audrey – Reservations Manager</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employee3.png" alt="Amara - Website Support" width="200">
+                    <img src="images/employee3.png" alt="Amara – Website Support" width="200">
                     <figcaption>Amara – Website Support</figcaption>
                 </figure>
             </div>
@@ -95,13 +103,13 @@
         <p>&copy; 2025 White Water Rafting | Maisela Manhla Madise</p>
         <nav class="socialmedia">
             <a href="https://facebook.com" target="_blank" aria-label="Visit us on Facebook">
-                <img src="images/fb.png" alt="Facebook">
+                <img src="images/fb.png" alt="Facebook icon linking to our page">
             </a>
             <a href="https://linkedin.com" target="_blank" aria-label="Visit us on LinkedIn">
-                <img src="images/lnkin.png" alt="LinkedIn">
+                <img src="images/lnkin.png" alt="LinkedIn icon for company profile">
             </a>
             <a href="https://instagram.com" target="_blank" aria-label="Visit us on Instagram">
-                <img src="images/inster.jpg" alt="Instagram">
+                <img src="images/inster.jpg" alt="Instagram icon for rafting photos">
             </a>
         </nav>
     </footer>
